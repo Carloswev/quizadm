@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Comportamental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>PERFIL COMPORTAMENTAL</h1>
+        <progress id="progress-bar" value="0" max="100"></progress>
+
+        <img src="images/adm.png" height="50" width="100px" alt="Imagem de Administração">
+        <div id="question-container"></div>
+
+       
+        <div id="navigation-container">
+            <button id="previous-button" onclick="goToPreviousQuestion()" disabled>Corrigir Resposta</button>
+            <button id="next-button" onclick="nextQuestion()">Próxima</button>
+        </div>
+
+  
+        <canvas id="results-chart" width="400" height="400" style="display: none;"></canvas>
+    </div>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
